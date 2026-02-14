@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+<script src="js.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Teddy Header -->
+    <div class="teddy">
+        🧸
+    </div>
+
+    <h1>Happy Birthday dear my friend ❤️</h1>
+    <p class="subtitle">You are my cutest teddy forever 💕</p>
+
+    <!-- Cake Section -->
+    <div class="cake">
+        🎂
+        <div class="candles">
+            <span class="candle" onclick="blowCandle(this)">🔥</span>
+            <span class="candle" onclick="blowCandle(this)">🔥</span>
+            <span class="candle" onclick="blowCandle(this)">🔥</span>
+        </div>
+    </div>
+
+    <p class="hint">Tap candles 🔥to blow them 🕯️</p>
+
+    <!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- wish Letter Popup -->
+<div id="loveLetter" class="letter">
+  <div class="letter-content">
+    <h2>My wish Letter 💌</h2>
+    <p>
+      You are my sunshine, my teddy, my everything ❤️  
+      I am with you forever and ever 
+      “If you ever feel lonely or need me, just call me. I’ll always answer for you.”💕
+    </p>
+    <button onclick="closeLetter()">Close</button>
+  </div>
+</div>
+
+<button onclick="openLetter()"> My Wish Letter 💌</button>
+<button><a href="love3.html" class="link">Get Next Step 💌</a></button>
+
+    <!-- Teddy Gifts -->
+    <h2>🎁 Your Teddy Gifts</h2>
+    <div class="gifts">
+        <div class="gift">🧸 Big Teddy</div>
+        <div class="gift">🧸 Love Teddy</div>
+        <div class="gift">🧸 Cute Teddy</div>
+        <audio id="bgMusic" controls >
+    <source src="https://open.spotify.com/track/15MvgPKHdoA44YNiCXbDfa?si=02b3fd7300d84893" type="audio/mpeg">
+        </audio>
+<script>
+let file = localStorage.getItem("music");
+if(file){
+bgMusic.src = file;
+}
+</script>
+
+</body>
+</html>

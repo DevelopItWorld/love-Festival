@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+<link rel="stylesheet" href="style.css">
+<script src="js.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Teddy Hug -->
+<div class="teddy-hug">
+  <img src="https://media.tenor.com/QWk92eu9uboAAAAj/urso-cora%C3%A7%C3%A3o.gif" width="250">
+  <p>This is my Hart for you 
+  </p><p> becouse today your Birthday🎂 </p>
+</div>
+
+<div><p>“That memorable moment with you is still in my heart—do you remember it?😊❤️ </p></div>
+
+
+<button><a href="ask4.html" class="link">This is the fainal sept 💌</a></button>
+    <div id="wishBox"></div>
+<!-- RIGHT HORIZONTAL SCROLL -->
+
+<div class="gallery-layout">
+ <h2>💑 Our Memories</h2>
+<div class="heart">❤️</div>
+
+  <div class="horizontal-panel" id="gallery">
+
+    <div class="h-card"><img src="https://picsum.photos/500/700?5"></div>
+    <div class="h-card"><img src="https://picsum.photos/500/700?6"></div>
+    <div class="h-card"><img src="https://picsum.photos/500/700?7"></div>
+    <div class="h-card"><img src="https://picsum.photos/500/700?8"></div>
+    <div class="h-card"><img src="https://picsum.photos/500/700?9"></div>
+
+  </div>
+</div>
+<script>
+let photos = JSON.parse(localStorage.getItem("photos")||"[]");
+photos.forEach(p=>{
+document.getElementById("gallery").innerHTML += `<img src="${p}" width="120">`;
+});
+</script>
+
+</div>
+</body>
+</html>
